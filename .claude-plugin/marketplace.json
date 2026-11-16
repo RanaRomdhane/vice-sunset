@@ -1,0 +1,5 @@
+{
+  "name": "vice-sunset",
+  "owner": { "name": "RanaRomdhane" },
+  "plugins": [{ "name": "vice-sunset", "source": "./" }]
+}

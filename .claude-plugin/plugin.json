@@ -1,0 +1,36 @@
+{
+  "name": "vice-sunset",
+  "version": "0.1.0",
+  "description": "A GTA VI-inspired look: purple-to-sunset sky, palm silhouettes, distant skyline, plum glass panels, neon-pink accents and a launch countdown above the composer.",
+  "author": {
+    "name": "RanaRomdhane"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "showCountdown": {
+      "type": "boolean",
+      "title": "Show countdown",
+      "description": "Show the slim countdown row above the message box.",
+      "default": true
+    },
+    "countdownLabel": {
+      "type": "string",
+      "title": "Countdown label",
+      "description": "The neon-pink word at the start of the countdown row.",
+      "default": "GTA VI"
+    },
+    "countdownTarget": {
+      "type": "string",
+      "title": "Countdown target",
+      "description": "Target date and time, ISO 8601. Add an offset to pin a timezone, e.g. 2026-11-19T00:00:00-05:00. Without one it is read as UTC.",
+      "default": "2026-11-19T00:00:00Z"
+    },
+    "animate": {
+      "type": "boolean",
+      "title": "Animated atmosphere",
+      "description": "Drifting haze, swaying palms and flickering windows. Off gives a still scene.",
+      "default": true
+    }
+  }
+}
