@@ -93,6 +93,10 @@ export const register: Register = (on, options) => {
   })
 
   on('ui.render', { component: 'Backdrop' }, ($, e, next) => {
+    // Every mod's backdrop reaches this hook: draw only our own scene.
+    if (e.props.plugin !== $.plugin.name || e.props.scene !== 'vice-sunset') {
+      return next(e)
+    }
     if (e.surface !== 'desktop' && e.surface !== 'mobile') {
       return next(e)
     }
