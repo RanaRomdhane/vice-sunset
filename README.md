@@ -2,6 +2,8 @@
 
 A GTA VI-inspired look for Claude Code in the Claude desktop app: a deep-purple sky fading to a pink-orange sunset, palm silhouettes on both edges, a distant skyline with flickering windows, slow drifting haze, plum frosted panels, white text and neon-pink accents. It also adds a slim countdown above the message box. Original art; not affiliated with Rockstar Games.
 
+![Vice Sunset theme in a Claude Code session: palm silhouettes and a city skyline against a purple-to-sunset sky, with the countdown above the message box](docs/screenshot.png)
+
 ## Install
 
 At the prompt of a Claude Code session:

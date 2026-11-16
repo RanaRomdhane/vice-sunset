@@ -74,12 +74,9 @@ export const register: Register = (on, options) => {
     if (unpainted !== undefined) {
       $.ui.toast(unpainted)
     }
-    const set = await $.theme.set(LOOK)
-
-
-    if (!set.isDrawn) {
-      $.ui.status(`Vice Sunset: ${set.reason}`)
-    }
+    // A session can start before the app attaches, so isDrawn may be false
+    // here even though the look draws once it does: no status note.
+    await $.theme.set(LOOK)
 
     if (showCountdown && !Number.isNaN(target)) {
       const tick = async () => {
